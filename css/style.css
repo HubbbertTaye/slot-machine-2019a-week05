@@ -1,0 +1,57 @@
+*{ box-sizing: border-box;
+
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{
+  background: lightblue;
+}
+.container{
+  width: 25%;
+  margin: 160px 0 0 40%;
+  border: 4px solid gold;
+  /* border shadow glow gold or green */
+  background: white;
+}
+header{
+  border-bottom: 2px solid gold;
+}
+h1{
+text-align: center;
+}
+header + section{
+height: 50px;
+}
+header + section p{
+  text-align: center;
+}
+header + section section{
+  float: left;
+  width: 33.3333%;
+  border: 2px solid gold;
+}
+header + section section p{
+  /* when items in array are picked, in the dom i want them to slowly roll in */
+  float: left;
+  text-align: center;
+  transform
+  width: 100%;
+  height: 20px;
+}
+footer button{
+  /* make buttons bigger */
+  margin-left: 27%;
+  padding: 2px 5px;
+  background: rgb(80, 200, 120);
+  border: 2px solid green;
+  border-radius: 20px;
+}
+h2{
+  font-weight:lighter;
+}
