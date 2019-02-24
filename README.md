@@ -1,24 +1,15 @@
-# 🎰 Week05 Bootcamp2019a Project: Slot Machine
+# 🎰 Slot Machine
 
-### Goal: Build a Simple Slot Machine
+This slot machine randomizes an array 3 times and displays in the DOM to show the user whether they won or lost money.
 
-Build a simple slot machine with minimum 5 items per reel and 3 reels - user should be able to bet min or max and have their total update
+![alt text](img/simbaslots.png)
 
-### How to submit your code for review:
+### How It's Made:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Tech used:** HTML5, CSS3, Javascript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Did layout, gave IDs for all necessary elements to be used in JS. On the click of each button, a specific function, encompassing 2 more functions, runs for that button. Those three functions run to: 'spin the slots' by randomly selecting an array index and then displaying the random selection into the DOM and 'compare the slot rolls' by checking through an if/else statement where if all slots match winner wins the max amount of money for the button they clicked, else they lose the minimum amount of money for the button they clicked.
+
+## Lessons Learned:
+
+I really enjoyed this project. Found out that it is never bad to include another function. Having a function inside of a function inside of another function happens. I feel like my code in this project is clean.
