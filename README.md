@@ -2,7 +2,7 @@
 
 This slot machine randomizes an array 3 times and displays in the DOM to show the user whether they won or lost money.
 
-![alt text](img/simbaslots.png)
+![screenshot of simba slots](img/slotmachine.png)
 
 ### How It's Made:
 

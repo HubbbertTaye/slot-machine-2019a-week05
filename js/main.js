@@ -13,7 +13,7 @@ document.getElementById('minButton').addEventListener('click', function(){
 //conditional compare slots true add money, false take money
   if (compareSpin(slot1, slot2, slot3)) {
     totalAmount +=25;
-    document.getElementById('result').innerHTML = `Congrats, you won $250! Your total is now \$${totalAmount}.`;
+    document.getElementById('result').innerHTML = `Congrats, you won $25! Your total is now \$${totalAmount}.`;
   }else{
     totalAmount -=1;
     document.getElementById('result').innerHTML = `Shame...you lost $1. Your total is now \$${totalAmount}.`;
@@ -43,7 +43,7 @@ function spinSlots(){
 //function for selecting random item in slots
 function spinRandom(){
   //change strings into pictures
-  const animals = ['simba', 'mufasa', 'nala', 'scar', 'rafiki', 'timon', 'pumbaa'];
+  const animals = ['<img src="img/nala.gif">', '<img src="img/pumbaa.png">', '<img src="img/hyena.gif">', '<img src="img/timon.gif">', '<img src="img/zazu.gif">', '<img src="img/simba.gif">'];
   let reelRoll = animals[Math.floor(Math.random()*animals.length)]; //floor(random)*index to randomly select an item off an array
   //return random item picked to variable's values
   return reelRoll;
@@ -57,41 +57,3 @@ function compareSpin(slot1, slot2, slot3){
     return false;
   }
 }
-
-//old psuedo and code
-
-//function to compare values in array
-//declare a variable for boolean variable to be true
-//if statement all slots are equal then boolean value is false
-//else boolean value is true
-//return boolean variable
-
-// //function to control score for min bets
-// function minBet(){
-//   //min button value is 25
-//   totalAmount -=25;
-//   //run random index function
-//   spinRandom();
-//   //
-//   if(unoVal=== dosVal=== tres Val){
-//     totalAmount +=50;
-//     document.getElementById('id').innerHTML = `Congrats, you won $25! Your total is now \$${totalAmount}.`;
-//   }else{
-//     document.getElementById('id').innerHTML = `Oh no, you lost $25...your total is now \$${totalAmount}.`;
-//   }
-// }
-//
-// //function to control score for max bets
-// function maxBet(){
-//   //max button value is 250
-//   totalAmount -=25;
-//   //run random index function
-//   spinRandom();
-//
-//   if (unoVal === dosVal === tresVal) {
-//     totalAmount +=250;
-//     document.getElementById('id').innerHTML = `Congrats, you won $250! Your total is now \$${totalAmount}.`;
-//   }else{
-//     document.getElementById('id').innerHTML = `Oh no, you lost $25...your total is now \$${totalAmount}.`;
-//   }
-// }
